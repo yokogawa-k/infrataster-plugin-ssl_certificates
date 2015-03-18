@@ -40,7 +40,7 @@ You can specify port number by options passed to Infrataster::Server.define in s
 Infrataster::Server.define(
   :app,
   '192.168.33.10',
-  ssl: { port: 8443 }
+  ssl: { port: 8443, open_timeout: 5, read_timeout: 5 }
   )
 ```
 
